@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Animation</title>
+
+<style>
+
+body{
+    text-align:center;
+    font-family:Arial;
+    background-color: lightcyan;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background-color:blue;
+    border-radius:50%;
+    position:relative;
+    animation: moveCircle 4s infinite;
+}
+
+@keyframes moveCircle{
+    0%   {left:0px; background-color:red;}
+    25%  {left:200px; background-color:orange;}
+    50%  {left:400px; background-color:yellow;}
+    75%  {left:200px; background-color:green;}
+    100% {left:0px; background-color:blue;}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1> Simple CSS Animation<h1>
+
+<div class="box"></div>
+
+</body>
+</html>
